@@ -1,7 +1,7 @@
 // const click = document.getElementById("click")
 const playingField = document.getElementById("playing-field")
 
-playingField.addEventListener("mouseenter", function() {
+playingField.addEventListener("mouseover", function() {
     setTimeout(enlarge, 2500)
 function enlarge() {
     clickBox.classList.remove("enlarge")
