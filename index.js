@@ -4,10 +4,11 @@ const playingField = document.getElementById("playing-field")
 playingField.addEventListener("mouseenter", function() {
     setTimeout(enlarge, 2500)
 function enlarge() {
+    clickBox.classList.remove("enlarge")
     clickBox.classList.add("enlarge")
 }
-    randomNum1 = Math.floor(Math.random() * (screen.width -400)+200)
-    randomNum2 = Math.floor(Math.random() * (screen.height -400)+200)
+    randomNum1 = Math.floor(Math.random() * (screen.width -600)+200)
+    randomNum2 = Math.floor(Math.random() * (screen.height -600)+200)
     console.log("hejdå")
     playingField.innerHTML = `<button
     id="clickBox"
